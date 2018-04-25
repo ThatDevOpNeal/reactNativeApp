@@ -10,7 +10,7 @@ export default class Main extends React.Component {
 		return (
 			<View style={styles.container}>
 				<View style={styles.header}>
-					<Text>- Header -</Text>        
+					<Text>To-Do List</Text>        
 				</View>
 				<ScrollView style={styles.scrollContainer}>
 					<Text style={styles.headerText}>Neal</Text>
@@ -19,7 +19,7 @@ export default class Main extends React.Component {
 					<TextInput 
 						style={styles.textInput}
 						placeholder='note'
-						placeholderTextColor='crimson'
+						placeholderTextColor='black'
 						underlineColorAndroid='transparent'
 					>
 					</TextInput>
@@ -42,8 +42,8 @@ const styles = StyleSheet.create({
 	},
 	headerText: {
 		color: 'black',
-		fontSize: 18,
-		padding: 26,
+		fontSize: 20,
+		padding: 20,
 	},
 	scrollContainer: {
 		flex: 1,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 	},
 	textInput: {
 		alignSelf: 'stretch',
-		color: 'crimson',
+		color: 'black',
 		padding: 20,
 		backgroundColor: 'lightgray',
 		borderTopWidth: 3,
