@@ -10,5 +10,9 @@
     - Virtual device tested on:
         - _Google Pixel 2_
         - _Google Pixel_ 
+    - If developing, _CTRL+M_, will open up settings.
+        - Allow `Live reload`
+        - Allow `Hot reload`
+            - Both of the above will make it easier during development.
 - if `npm run android` or `yarn run android` does not work check _build.gradle_ file.
     - under `repositories` add `google()`
