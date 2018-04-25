@@ -4,9 +4,21 @@ import { StyleSheet, Text, View, TextInput, ScrollView, TouchableOpacity } from 
     ScrollView, allows the screen to be scrollable.
     TouchableOpacity are for buttons.
 */
+import Note from './Note.js';
 
 export default class Main extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			todoArray: [],
+			todoText: ''
+		};
+	};
+
 	render() {
+		let notes = this.state.todoArray.map((val, key) => {
+			return <Note key={key} keyVal={key} val={val} delete={ () => this.deleteNote(key) } />
+		}); //TODO: create deleteNote method. TextInput make an onChange method maybe.
 		return (
 			<View style={styles.container}>
 				<View style={styles.header}>
