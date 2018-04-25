@@ -32,20 +32,18 @@ export default class Main extends React.Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: 'white',
-		alignItems: 'center',
-		justifyContent: 'center',
 	},
 	header: {
 		backgroundColor: 'lightgray',
 		alignItems: 'center',
 		justifyContent: 'center',
-		borderBottomWidth: 3,
+		borderBottomWidth: 10,
 		borderBottomColor: 'crimson',
 	},
 	headerText: {
 		color: 'black',
 		fontSize: 18,
+		padding: 26,
 	},
 	scrollContainer: {
 		flex: 1,
