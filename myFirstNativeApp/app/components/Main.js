@@ -24,6 +24,9 @@ export default class Main extends React.Component {
 					>
 					</TextInput>
 				</View>
+				<TouchableOpacity style={styles.addButton}>
+					<Text style={styles.addButtonText}>+</Text>
+				</TouchableOpacity>
 			</View>
 		);
 	}
@@ -63,5 +66,22 @@ const styles = StyleSheet.create({
 		backgroundColor: 'lightgray',
 		borderTopWidth: 3,
 		borderTopColor: 'crimson',
+	},
+	addButton: {
+		position: 'absolute',
+		zIndex: 11,
+		right: 20,
+		bottom: 90,
+		backgroundColor: 'crimson',
+		width: 90,
+		height: 90,
+		borderRadius: 50,
+		alignItems: 'center',
+		justifyContent: 'center',
+		elevation: 8, //Android only. Adds a drop shadow to the item
+	},
+	addButtonText: {
+		color: 'white',
+		fontSize: 30,
 	}
 });
